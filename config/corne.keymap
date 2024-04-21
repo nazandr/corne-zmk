@@ -28,7 +28,7 @@
         CopltRow: CopltRow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt TAB &kp ENTER>;
+            bindings = <&kp TAB &kp ENTER>;
             label = "COPLTROW";
         };
 
@@ -63,7 +63,7 @@
 &gresc             &kp Q               &kp W           &kp E           &kp R             &kp T          &kp Y        &kp U              &kp I       &kp O            &kp P                    &kp LEFT_BRACKET
 &kp RIGHT_BRACKET  &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_GUI D  &mt LEFT_SHIFT F  &kp G          &kp H        &mt RIGHT_SHIFT J  &mt LGUI K  &mt RIGHT_ALT L  &mt LCTRL LA(SEMICOLON)  &kp SQT
 &kp BACKSLASH      &kp Z               &kp X           &kp C           &kp V             &kp B          &kp N        &kp M              &kp COMMA   &kp DOT          &kp FSLH                 &kp EQUAL
-                                                       &kp CAPSLOCK    &mt LEFT_GUI TAB  &lt 1 SPACE    &lt 2 ENTER  &kt BACKSPACE      &kp ESCAPE
+                                                       &kp CAPSLOCK    &mt LEFT_GUI TAB  &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE      &kp ESCAPE
             >;
         };
 
