@@ -10,6 +10,29 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    macros {
+        ScnSh: ScnSh {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI &kp LEFT_SHIFT &kp NUMBER_4>;
+            label = "SCNSH";
+        };
+
+        CopltNxt: CopltNxt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI &kp RIGHT_ARROW>;
+            label = "COPLTNXT";
+        };
+
+        CopltRow: CopltRow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt TAB &kp ENTER>;
+            label = "COPLTROW";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
