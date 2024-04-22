@@ -7,21 +7,20 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 
 / {
     macros {
         ScnSh: ScnSh {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI &kp LEFT_SHIFT &kp NUMBER_4>;
+            bindings = <&kp LS(LG(NUMBER_4))>;
             label = "SCNSH";
         };
 
         CopltNxt: CopltNxt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI &kp RIGHT_ARROW>;
+            bindings = <&kp LG(RIGHT_ARROW)>;
             label = "COPLTNXT";
         };
 
@@ -35,7 +34,7 @@
         VsCdTrm: VsCdTrm {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RCTRL &kp GRAVE>;
+            bindings = <&kp LC(GRAVE)>;
             label = "VSCDTRM";
         };
     };
